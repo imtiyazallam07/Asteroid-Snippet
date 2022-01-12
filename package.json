@@ -6,7 +6,7 @@
     "author": "Asteroid Softwares",
     "icon": "images/icon128.png",
     "license": "MIT License",
-    "publisher": "asteroid-softwares",
+    "publisher": "AsteroidSoftwares",
     "engines": {
         "vscode": "^1.63.0"
     },
