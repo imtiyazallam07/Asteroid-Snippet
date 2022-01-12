@@ -1,0 +1,249 @@
+{
+    "print": {
+		"prefix": "print",
+		"body": [
+			"System.out.print(\"$1\");"
+		],
+		"description": "prints text with no new line"
+	},
+
+    "println": {
+		"prefix": "println",
+		"body": [
+			"System.out.println(\"$1\");"
+		],
+		"description": "prints text with a new line"
+	},
+
+    "Scanner Object": {
+		"prefix": "scanner",
+		"body": [
+			"Scanner ${1:sc} = new Scanner(${2:System.in});"
+		],
+		"description": "Creates a Scanner object"
+	},
+
+    "equals": {
+		"prefix": "is",
+		"body": [
+			"=="
+		],
+		"description": "prints text with a new line"
+	},
+
+    "absolute": {
+		"prefix": "abs",
+		"body": [
+			"Math.abs(${1:number})"
+		],
+		"description": "absolute method"
+	},
+
+    "power": {
+		"prefix": "pow",
+		"body": [
+			"Math.pow(${1:number}, ${2:power})"
+		],
+		"description": "power method"
+	},
+
+    "round": {
+		"prefix": "round",
+		"body": [
+			"Math.round(${1:number})"
+		],
+		"description": "round method"
+	},
+
+    "rint": {
+		"prefix": "rint",
+		"body": [
+			"Math.rint(${1:number})"
+		],
+		"description": "rint method"
+	},
+
+    "ceil": {
+		"prefix": "ceil",
+		"body": [
+			"Math.ceil(${1:number})"
+		],
+		"description": "ceil method"
+	},
+
+    "floor": {
+		"prefix": "floor",
+		"body": [
+			"Math.floor(${1:number})"
+		],
+		"description": "floor method"
+	},
+
+    "pi": {
+		"prefix": "pi",
+		"body": [
+			"Math.PI"
+		],
+		"description": "Pi Value"
+	},
+
+    "e": {
+		"prefix": "e",
+		"body": [
+			"Math.E"
+		],
+		"description": "E"
+	},
+
+    "sin": {
+		"prefix": "sin",
+		"body": [
+			"Math.sin(${1:number})"
+		],
+		"description": "sin method"
+	},
+
+    "cos": {
+		"prefix": "cos",
+		"body": [
+			"Math.cos(${1:number})"
+		],
+		"description": "cos method"
+	},
+
+    "tan": {
+		"prefix": "tan",
+		"body": [
+			"Math.tan(${1:number})"
+		],
+		"description": "tan method"
+	},
+
+    "max": {
+		"prefix": "max",
+		"body": [
+			"Math.max(${1:number1}, ${2:number2})"
+		],
+		"description": "max method"
+	},
+
+    "min": {
+		"prefix": "min",
+		"body": [
+			"Math.min(${1:number1}, ${2:number2})"
+		],
+		"description": "min method"
+	},
+
+    "error println": {
+		"prefix": "errpln",
+		"body": [
+			"System.err.println($1)"
+		],
+		"description": "error println"
+	},
+
+    "error print": {
+		"prefix": "errp",
+		"body": [
+			"System.err.print($1)"
+		],
+		"description": "error print"
+	},
+    
+    "to integer": {
+		"prefix": "to_i",
+		"body": [
+			"Integer.parseInt($1)"
+		],
+		"description": "parseInt"
+	},
+    
+    "to short": {
+		"prefix": "to_sh",
+		"body": [
+			"Short.parseShort($1)"
+		],
+		"description": "parseShort"
+	},
+    
+    "to byte": {
+		"prefix": "to_b",
+		"body": [
+			"Byte.parseByte($1)"
+		],
+		"description": "parseByte"
+	},
+
+	"to long": {
+		"prefix": "to_l",
+		"body": [
+			"Long.parseLong($1)"
+		],
+		"description": "parseLong"
+	},
+
+	"to string": {
+		"prefix": "to_s",
+		"body": [
+			"toString()"
+		],
+		"description": "toString"
+	},
+
+	"to float": {
+		"prefix": "to_f",
+		"body": [
+			"Float.parseFloat($1)"
+		],
+		"description": "parseLong"
+	},
+
+	"to double": {
+		"prefix": "to_d",
+		"body": [
+			"Double.parseDouble($1)"
+		],
+		"description": "parseLong"
+	},
+
+	"class and main method": {
+		"prefix": "clsmain",
+		"body": [
+			"public class $TM_FILENAME_BASE {",
+			"    public static void main(String[] args) {",
+			"        $0",
+			"    }",
+			"}"
+
+		],
+		"description": "Generate class and main method"
+	},
+
+	"class": {
+		"prefix": "cls",
+		"body": [
+			"public class $TM_FILENAME_BASE {",
+			"    ",
+			"}"
+		],
+		"description": "Generates a class"
+	},
+
+	"InputStreamReader": {
+		"prefix": "inputstreamreader",
+		"body": [
+			"InputStreamReader ${1:in} = new InputStreamReader(${2:System.in});"
+		],
+		"description": "Generates a BufferedReader object"
+	},
+
+	"BufferedReader": {
+		"prefix": "bufferedreader",
+		"body": [
+			"BufferedReader ${1:bf} = new BufferedReader(${2:new InputStreamReader(System.in)});"
+		],
+		"description": "Generates a BufferedReader object"
+	},
+    
+}
