@@ -4,7 +4,7 @@
     "description": "Basic java code snippet",
     "version": "0.0.1",
     "author": "Asteroid Softwares",
-    "icon": "https://raw.githubusercontent.com/Imtiyaz2007/Asteroid-Snippet/main/icon128.png",
+    "icon": "images/icon128.png",
     "license": "MIT License",
     "publisher": "asteroid-softwares",
     "engines": {
