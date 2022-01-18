@@ -245,5 +245,235 @@
 		],
 		"description": "Generates a BufferedReader object"
 	},
-    
+
+	"object": {
+		"prefix": "obj",
+		"body": [
+			"$TM_FILENAME_BASE ${1:obj} = new $TM_FILENAME_BASE($2);"
+		],
+		"description": "Generates a object with the same name of the public class (Object class is taken from file name)"
+	},
+
+	"ternary operator": {
+		"prefix": "ternary",
+		"body": [
+			"${1:true} ? ${1:0} : ${$1:0}"
+		],
+		"description": "ternary operator"
+	},
+
+	"logical or": {
+		"prefix": "or",
+		"body": [
+			"||"
+		],
+		"description": "logical or"
+	},
+
+	"logical and": {
+		"prefix": "and",
+		"body": [
+			"&&"
+		],
+		"description": "logical and"
+	},
+
+	"logical not": {
+		"prefix": "not",
+		"body": [
+			"!"
+		],
+		"description": "logical not"
+	},
+
+	"not equals": {
+		"prefix": "noteq",
+		"body": [
+			"!="
+		],
+		"description": "not equals"
+	},
+
+	"public static": {
+		"prefix": "ps",
+		"body": [
+			"public static "
+		],
+		"description": "public static "
+	},
+
+	"public static final": {
+		"prefix": "psf",
+		"body": [
+			"public static final "
+		],
+		"description": "public static final"
+	},
+
+	"public static final boolean": {
+		"prefix": "psfb",
+		"body": [
+			"public static final boolean"
+		],
+		"description": "public static final boolean"
+	},
+
+	"public static final int": {
+		"prefix": "psfi",
+		"body": [
+			"public static final int"
+		],
+		"description": "public static final int"
+	},
+
+	"public static final method": {
+		"prefix": "psfm",
+		"body": [
+			"public static final ${1:void} ${2:methodName} {",
+			"    ${0}",
+			"}"
+		],
+		"description": "public static final method"
+	},
+
+	"public static method": {
+		"prefix": "psm",
+		"body": [
+			"public static final ${1:methodName} {",
+			"    ${0}",
+			"}"
+		],
+		"description": "public static final method"
+	},
+
+	"public static final String": {
+		"prefix": "psfs",
+		"body": [
+			"public static final String "
+		],
+		"description": "public static final String"
+	},
+
+	"public static int": {
+		"prefix": "psi",
+		"body": [
+			"public static int "
+		],
+		"description": "public static int"
+	},
+
+	"public static boolean": {
+		"prefix": "psb",
+		"body": [
+			"public static boolean "
+		],
+		"description": "public static boolean"
+	},
+
+	"public method": {
+		"prefix": "pm",
+		"body": [
+			"public ${1:void} ${2:methodName} {",
+			"    ${0}",
+			"}"
+
+		],
+		"description": "public method"
+	},
+
+	"public int": {
+		"prefix": "pubint",
+		"body": [
+			"public int "
+		],
+		"description": "public int"
+	},
+
+	"public boolean": {
+		"prefix": "pubbool",
+		"body": [
+			"public boolean "
+		],
+		"description": "public boolean"
+	},
+
+	"public String": {
+		"prefix": "pubstr",
+		"body": [
+			"public String "
+		],
+		"description": "public String"
+	},
+
+	"final class": {
+		"prefix": "fincls",
+		"body": [
+			"public final class $TM_FILENAME_BASE {",
+			"    ",
+			"}"
+		],
+		"description": "Generates a final class"
+	},
+
+	"try catch": {
+		"prefix": "trycatch",
+		"body": [
+			"try {",
+			"    ",
+			"} catch (${1:Exception} ${2:e}) {",
+			"    ",
+			"}"
+		],
+		"description": "try catch block"
+	},
+
+	"if elseif else": {
+		"prefix": "if_elseif_else",
+		"body": [
+			"if (${1:true}) {",
+			"    ",
+			"} else if (${2:true}) {",
+			"    ",
+			"} else {", 
+			"    ",
+			"}"
+		],
+		"description": "if elseif else block"
+	},
+
+	"enum": {
+		"prefix": "enum",
+		"body": [
+			"public enum $TM_FILENAME_BASE {",
+			"    ",
+			"}"
+		],
+		"description": "Generates a enum"
+	},
+
+	"try catch finally": {
+		"prefix": "trycatchfinally",
+		"body": [
+			"try {",
+			"    ",
+			"} catch (${1:Exception} ${2:e}) {",
+			"    ",
+			"} finally {",
+			"    ",
+			"}"
+		],
+		"description": "try catch finally block"
+	},
+
+	"Thread sleep": {
+		"prefix": "sleep",
+		"body": [
+			"try {",
+			"    Thread.sleep(${1:1000});",
+			"} catch (InterruptedException e) {",
+			"    e.printStackTrace();",
+			"}"
+		],
+		"description": "Thread.sleep with try catch block surrounding it"
+	}, 
 }

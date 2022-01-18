@@ -45,6 +45,31 @@ Visual Studio Code 1.63.0 <br/>
 28|cls|Generates a class with name same as the file name
 29|inputstreamreader|Generates an object of InputStreamReader Class
 30|bufferedreader|Generates an object of BufferedReader Class
+31|obj|Generates a object with the same name of the public class (Object class is taken from file name)
+32|ternary|ternary operator
+33|or|\|\|
+34|and|&&
+35|not|!
+36|noteq|!=
+37|ps|public static
+38|psf|public static final
+39|psfb|public static final boolean
+40|psfi|public static final int
+41|psfm|public static final method
+42|psm|public static method
+43|psfs|public static final String
+44|psi|public static int
+45|psb|public static boolean
+46|pm|public method
+47|pubint|public int
+48|pubbool|public boolean
+49|pubstr|public String
+50|finalcls|Generates a final class
+51|trycatch|try catch block
+52|if_elseif_else|if elseif else block
+53|enum|public enum with the same name of the file
+54|trycatchfinally|try catch finally block
+55|sleep|Thread.sleep with try catch block surrounding it
 
 ## Source Code
 https://github.com/Imtiyaz2007/Asteroid-Snippet
