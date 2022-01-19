@@ -75,4 +75,9 @@ Visual Studio Code 1.63.0 <br/>
 https://github.com/Imtiyaz2007/Asteroid-Snippet
 
 ## VSIX Build
+### Version 1.0.1
+https://github.com/Imtiyaz2007/Asteroid-Snippet/blob/9e4b7d2f46cb9f3b8826d979edac0edfaae6903e/asteroid-snippet-1.0.1.vsix
+### Version 1.0.0
 https://github.com/Imtiyaz2007/Asteroid-Snippet/blob/17484f245a721098ab6053c516696e08033ef74c/asteroid-snippet-1.0.0.vsix
+### Version 0.0.1
+https://github.com/Imtiyaz2007/Asteroid-Snippet/blob/9e4b7d2f46cb9f3b8826d979edac0edfaae6903e/asteroid-snippet-0.0.1.vsix
