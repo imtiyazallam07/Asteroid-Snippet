@@ -329,7 +329,7 @@
 	"public static final method": {
 		"prefix": "psfm",
 		"body": [
-			"public static final ${1:void} ${2:methodName} {",
+			"public static final ${1:void} ${2:methodName} (${3}) {",
 			"    ${0}",
 			"}"
 		],
@@ -339,7 +339,7 @@
 	"public static method": {
 		"prefix": "psm",
 		"body": [
-			"public static final ${1:methodName} {",
+			"public static final ${1:methodName} (${2}) {",
 			"    ${0}",
 			"}"
 		],
@@ -373,7 +373,7 @@
 	"public method": {
 		"prefix": "pm",
 		"body": [
-			"public ${1:void} ${2:methodName} {",
+			"public ${1:void} ${2:methodName} (${3}) {",
 			"    ${0}",
 			"}"
 
