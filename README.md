@@ -11,6 +11,13 @@ Snippets which are commonly used by beginners.
 Visual Studio Code 1.63.0 <br/>
 > Note: This extension is tested with Visual Studio Code 1.63.0 and above
 
+<br>
+
+# Installation
+Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
+<br>
+``` ext install AsteroidSoftwares.asteroid-snippet ```
+
 ## All Snippets
 
 **Sl. No.**|**Snippet**|**Content**
@@ -45,7 +52,7 @@ Visual Studio Code 1.63.0 <br/>
 28|cls|Generates a class with name same as the file name
 29|inputstreamreader|Generates an object of InputStreamReader Class
 30|bufferedreader|Generates an object of BufferedReader Class
-31|obj|Generates a object with the same name of the public class (Object class is taken from file name)
+31|obj|Object
 32|ternary|ternary operator
 33|or|\|\|
 34|and|&&
@@ -70,15 +77,29 @@ Visual Studio Code 1.63.0 <br/>
 53|enum|public enum with the same name of the file
 54|trycatchfinally|try catch finally block
 55|sleep|Thread.sleep with try catch block surrounding it
+56|strarr|String array
+57|intarr|int array
+58|shortarr|short array
+59|bytearr|byte array
+60|longarr|long array
+61|doublearr|double array
+62|floatarr|float array
+63|chararr|char array
+64|boolarr|boolean array
+65|objarr|Object array
+66|arr|Array
+67|main|main method
+68|constructor|public constructor
+69|pvtm|private method
+70|pvtsm|private static method
+71|prom|protected method
+72|prosm|protected static method
+73|switch|Switch statement
+74|pvtf|private field
+75|abstract|abstract class
 
 ## Source Code
 https://github.com/Imtiyaz2007/Asteroid-Snippet
 
-## VSIX Build
-### Version 1.0.1
-https://github.com/Imtiyaz2007/Asteroid-Snippet/blob/ff93496be9853ed43cf9063127ed65fea9814e78/asteroid-snippet-1.0.1.vsix
-
-### Version 1.0.0
-https://github.com/Imtiyaz2007/Asteroid-Snippet/blob/17484f245a721098ab6053c516696e08033ef74c/asteroid-snippet-1.0.0.vsix
-### Version 0.0.1
-https://github.com/Imtiyaz2007/Asteroid-Snippet/blob/9e4b7d2f46cb9f3b8826d979edac0edfaae6903e/asteroid-snippet-0.0.1.vsix
+## Extension on marketplace
+https://marketplace.visualstudio.com/items?itemName=AsteroidSoftwares.asteroid-snippet

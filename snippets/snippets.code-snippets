@@ -1,180 +1,158 @@
 {
-    "print": {
+	"print": {
 		"prefix": "print",
 		"body": [
 			"System.out.print(\"$1\");"
 		],
 		"description": "prints text with no new line"
 	},
-
-    "println": {
+	"println": {
 		"prefix": "println",
 		"body": [
 			"System.out.println(\"$1\");"
 		],
 		"description": "prints text with a new line"
 	},
-
-    "Scanner Object": {
+	"Scanner Object": {
 		"prefix": "scanner",
 		"body": [
 			"Scanner ${1:sc} = new Scanner(${2:System.in});"
 		],
 		"description": "Creates a Scanner object"
 	},
-
-    "equals": {
+	"equals": {
 		"prefix": "is",
 		"body": [
 			"=="
 		],
 		"description": "prints text with a new line"
 	},
-
-    "absolute": {
+	"absolute": {
 		"prefix": "abs",
 		"body": [
 			"Math.abs(${1:number})"
 		],
 		"description": "absolute method"
 	},
-
-    "power": {
+	"power": {
 		"prefix": "pow",
 		"body": [
 			"Math.pow(${1:number}, ${2:power})"
 		],
 		"description": "power method"
 	},
-
-    "round": {
+	"round": {
 		"prefix": "round",
 		"body": [
 			"Math.round(${1:number})"
 		],
 		"description": "round method"
 	},
-
-    "rint": {
+	"rint": {
 		"prefix": "rint",
 		"body": [
 			"Math.rint(${1:number})"
 		],
 		"description": "rint method"
 	},
-
-    "ceil": {
+	"ceil": {
 		"prefix": "ceil",
 		"body": [
 			"Math.ceil(${1:number})"
 		],
 		"description": "ceil method"
 	},
-
-    "floor": {
+	"floor": {
 		"prefix": "floor",
 		"body": [
 			"Math.floor(${1:number})"
 		],
 		"description": "floor method"
 	},
-
-    "pi": {
+	"pi": {
 		"prefix": "pi",
 		"body": [
 			"Math.PI"
 		],
 		"description": "Pi Value"
 	},
-
-    "e": {
+	"e": {
 		"prefix": "e",
 		"body": [
 			"Math.E"
 		],
 		"description": "E"
 	},
-
-    "sin": {
+	"sin": {
 		"prefix": "sin",
 		"body": [
 			"Math.sin(${1:number})"
 		],
 		"description": "sin method"
 	},
-
-    "cos": {
+	"cos": {
 		"prefix": "cos",
 		"body": [
 			"Math.cos(${1:number})"
 		],
 		"description": "cos method"
 	},
-
-    "tan": {
+	"tan": {
 		"prefix": "tan",
 		"body": [
 			"Math.tan(${1:number})"
 		],
 		"description": "tan method"
 	},
-
-    "max": {
+	"max": {
 		"prefix": "max",
 		"body": [
 			"Math.max(${1:number1}, ${2:number2})"
 		],
 		"description": "max method"
 	},
-
-    "min": {
+	"min": {
 		"prefix": "min",
 		"body": [
 			"Math.min(${1:number1}, ${2:number2})"
 		],
 		"description": "min method"
 	},
-
-    "error println": {
+	"error println": {
 		"prefix": "errpln",
 		"body": [
 			"System.err.println($1)"
 		],
 		"description": "error println"
 	},
-
-    "error print": {
+	"error print": {
 		"prefix": "errp",
 		"body": [
 			"System.err.print($1)"
 		],
 		"description": "error print"
 	},
-    
-    "to integer": {
+	"to integer": {
 		"prefix": "to_i",
 		"body": [
 			"Integer.parseInt($1)"
 		],
 		"description": "parseInt"
 	},
-    
-    "to short": {
+	"to short": {
 		"prefix": "to_sh",
 		"body": [
 			"Short.parseShort($1)"
 		],
 		"description": "parseShort"
 	},
-    
-    "to byte": {
+	"to byte": {
 		"prefix": "to_b",
 		"body": [
 			"Byte.parseByte($1)"
 		],
 		"description": "parseByte"
 	},
-
 	"to long": {
 		"prefix": "to_l",
 		"body": [
@@ -182,7 +160,6 @@
 		],
 		"description": "parseLong"
 	},
-
 	"to string": {
 		"prefix": "to_s",
 		"body": [
@@ -190,7 +167,6 @@
 		],
 		"description": "toString"
 	},
-
 	"to float": {
 		"prefix": "to_f",
 		"body": [
@@ -198,7 +174,6 @@
 		],
 		"description": "parseLong"
 	},
-
 	"to double": {
 		"prefix": "to_d",
 		"body": [
@@ -206,7 +181,6 @@
 		],
 		"description": "parseLong"
 	},
-
 	"class and main method": {
 		"prefix": "clsmain",
 		"body": [
@@ -215,11 +189,9 @@
 			"        $0",
 			"    }",
 			"}"
-
 		],
 		"description": "Generate class and main method"
 	},
-
 	"class": {
 		"prefix": "cls",
 		"body": [
@@ -229,7 +201,6 @@
 		],
 		"description": "Generates a class"
 	},
-
 	"InputStreamReader": {
 		"prefix": "inputstreamreader",
 		"body": [
@@ -237,7 +208,6 @@
 		],
 		"description": "Generates a BufferedReader object"
 	},
-
 	"BufferedReader": {
 		"prefix": "bufferedreader",
 		"body": [
@@ -245,15 +215,13 @@
 		],
 		"description": "Generates a BufferedReader object"
 	},
-
 	"object": {
 		"prefix": "obj",
 		"body": [
-			"$TM_FILENAME_BASE ${1:obj} = new $TM_FILENAME_BASE($2);"
+			"${1:$TM_FILENAME_BASE} ${2:obj} = new ${1:$TM_FILENAME_BASE}($3);"
 		],
 		"description": "Generates a object with the same name of the public class (Object class is taken from file name)"
 	},
-
 	"ternary operator": {
 		"prefix": "ternary",
 		"body": [
@@ -261,7 +229,6 @@
 		],
 		"description": "ternary operator"
 	},
-
 	"logical or": {
 		"prefix": "or",
 		"body": [
@@ -269,7 +236,6 @@
 		],
 		"description": "logical or"
 	},
-
 	"logical and": {
 		"prefix": "and",
 		"body": [
@@ -277,7 +243,6 @@
 		],
 		"description": "logical and"
 	},
-
 	"logical not": {
 		"prefix": "not",
 		"body": [
@@ -285,7 +250,6 @@
 		],
 		"description": "logical not"
 	},
-
 	"not equals": {
 		"prefix": "noteq",
 		"body": [
@@ -293,7 +257,6 @@
 		],
 		"description": "not equals"
 	},
-
 	"public static": {
 		"prefix": "ps",
 		"body": [
@@ -301,7 +264,6 @@
 		],
 		"description": "public static "
 	},
-
 	"public static final": {
 		"prefix": "psf",
 		"body": [
@@ -309,7 +271,6 @@
 		],
 		"description": "public static final"
 	},
-
 	"public static final boolean": {
 		"prefix": "psfb",
 		"body": [
@@ -317,7 +278,6 @@
 		],
 		"description": "public static final boolean"
 	},
-
 	"public static final int": {
 		"prefix": "psfi",
 		"body": [
@@ -325,7 +285,6 @@
 		],
 		"description": "public static final int"
 	},
-
 	"public static final method": {
 		"prefix": "psfm",
 		"body": [
@@ -335,7 +294,6 @@
 		],
 		"description": "public static final method"
 	},
-
 	"public static method": {
 		"prefix": "psm",
 		"body": [
@@ -345,7 +303,6 @@
 		],
 		"description": "public static final method"
 	},
-
 	"public static final String": {
 		"prefix": "psfs",
 		"body": [
@@ -353,7 +310,6 @@
 		],
 		"description": "public static final String"
 	},
-
 	"public static int": {
 		"prefix": "psi",
 		"body": [
@@ -361,7 +317,6 @@
 		],
 		"description": "public static int"
 	},
-
 	"public static boolean": {
 		"prefix": "psb",
 		"body": [
@@ -369,18 +324,15 @@
 		],
 		"description": "public static boolean"
 	},
-
 	"public method": {
 		"prefix": "pm",
 		"body": [
 			"public ${1:void} ${2:methodName} (${3}) {",
 			"    ${0}",
 			"}"
-
 		],
 		"description": "public method"
 	},
-
 	"public int": {
 		"prefix": "pubint",
 		"body": [
@@ -388,7 +340,6 @@
 		],
 		"description": "public int"
 	},
-
 	"public boolean": {
 		"prefix": "pubbool",
 		"body": [
@@ -396,7 +347,6 @@
 		],
 		"description": "public boolean"
 	},
-
 	"public String": {
 		"prefix": "pubstr",
 		"body": [
@@ -404,7 +354,6 @@
 		],
 		"description": "public String"
 	},
-
 	"final class": {
 		"prefix": "fincls",
 		"body": [
@@ -414,7 +363,6 @@
 		],
 		"description": "Generates a final class"
 	},
-
 	"try catch": {
 		"prefix": "trycatch",
 		"body": [
@@ -426,7 +374,6 @@
 		],
 		"description": "try catch block"
 	},
-
 	"if elseif else": {
 		"prefix": "if_elseif_else",
 		"body": [
@@ -434,23 +381,21 @@
 			"    ",
 			"} else if (${2:true}) {",
 			"    ",
-			"} else {", 
+			"} else {",
 			"    ",
 			"}"
 		],
 		"description": "if elseif else block"
 	},
-
 	"enum": {
 		"prefix": "enum",
 		"body": [
-			"public enum $TM_FILENAME_BASE {",
+			"public enum ${1:$TM_FILENAME_BASE} {",
 			"    ",
 			"}"
 		],
 		"description": "Generates a enum"
 	},
-
 	"try catch finally": {
 		"prefix": "trycatchfinally",
 		"body": [
@@ -464,7 +409,6 @@
 		],
 		"description": "try catch finally block"
 	},
-
 	"Thread sleep": {
 		"prefix": "sleep",
 		"body": [
@@ -475,5 +419,167 @@
 			"}"
 		],
 		"description": "Thread.sleep with try catch block surrounding it"
-	}, 
+	},
+	"String array": {
+		"prefix": "strarr",
+		"body": [
+			"String[] ${1:arr} = ${1:new String[${2:10}]};"
+		],
+		"description": "String array"
+	},
+	"int array": {
+		"prefix": "intarr",
+		"body": [
+			"int[] ${1:arr} = ${1:new int[${2:10}]};"
+		],
+		"description": "int array"
+	},
+	"short array": {
+		"prefix": "shortarr",
+		"body": [
+			"short[] ${1:arr} = ${1:new short[${2:10}]};"
+		],
+		"description": "short array"
+	},
+	"byte array": {
+		"prefix": "bytearray",
+		"body": [
+			"byte[] ${1:arr} = ${1:new byte[${2:10}]};"
+		],
+		"description": "byte array"
+	},
+	"long array": {
+		"prefix": "longarr",
+		"body": [
+			"long[] ${1:arr} = ${1:new long[${2:10}]};"
+		],
+		"description": "long array"
+	},
+	"double array": {
+		"prefix": "doublearr",
+		"body": [
+			"double[] ${1:arr} = ${1:new double[${2:10}]};"
+		],
+		"description": "double array"
+	},
+	"float array": {
+		"prefix": "floatarr",
+		"body": [
+			"float[] ${1:arr} = ${1:new float[${2:10}]};"
+		],
+		"description": "float array"
+	},
+	"char array": {
+		"prefix": "chararr",
+		"body": [
+			"char[] ${1:arr} = ${1:new char[${2:10}]};"
+		],
+		"description": "char array"
+	},
+	"boolean array": {
+		"prefix": "boolarr",
+		"body": [
+			"boolean[] ${1:arr} = ${1:new boolean[${2:10}]};"
+		],
+		"description": "boolean array"
+	},
+	"Object array": {
+		"prefix": "objarr",
+		"body": [
+			"Object[] ${1:arr} = ${1:new Object[${2:10}]};"
+		],
+		"description": "Object array"
+	},
+	"Array": {
+		"prefix": "arr",
+		"body": [
+			"${1:Object}[] ${2:arr} = ${3:new ${1:Object}[${4:10}]};"
+		],
+		"description": "Array"
+	},
+	"main": {
+		"prefix": "main",
+		"body": [
+			"public static void main(String[] args) {",
+			"    $0",
+			"}"
+		],
+		"description": "main method"
+	},
+	"public constructor": {
+		"prefix": "constructor",
+		"body": [
+			"public ${1:${TM_FILENAME_BASE}}($2) {",
+			"    ",
+			"}"
+		],
+		"description": "public constructor"
+	},
+	"private method": {
+		"prefix": "pvtm",
+		"body": [
+			"private ${1:void} ${2:name}($3) {",
+			"    $0",
+			"}"
+		],
+		"description": "private method"
+	},
+	"private static method": {
+		"prefix": "pvtsm",
+		"body": [
+			"private static ${1:Type} ${2:name}(${3}) {",
+			"    $0",
+			"}"
+		],
+		"description": "private static method"
+	},
+	"protected method": {
+		"prefix": "prom",
+		"body": [
+			"protected ${1:void} ${2:name}(${3}) {",
+			"    $0",
+			"}"
+		],
+		"description": "Protected method"
+	},
+	"protected static method": {
+		"prefix": "prosm",
+		"body": [
+			"protected static ${1:void} ${2:name}(${3}) {",
+			"    $0",
+			"}"
+		],
+		"description": "Protected method"
+	},
+	"Switch Statement": {
+		"prefix": "switch",
+		"body": [
+			"switch (${1:variable}) {",
+			"    case ${2:value}:",
+			"        $0",
+			"        break;",
+			"",
+			"    default:",
+			"        break;",
+			"}"
+		],
+		"description": "Switch Statement"
+	},
+	"private field": {
+		"prefix": "pvtf",
+		"body": [
+			"private ${1:String} ${2:name};"
+		],
+		"description": "Private field"
+	},
+	"abstract class": {
+		"prefix": "abstract",
+		"body": [
+			"abstract class ${1:$TM_FILENAME_BASE} {",
+			"    ${0}",
+			"}"
+		],
+		"description": "abstract class"
+	}
+	
 }
