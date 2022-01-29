@@ -19,6 +19,8 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 <br>
 ``` ext install AsteroidSoftwares.asteroid-snippet ```
 
+## All Snippets
+<https://github.com/Imtiyaz2007/Asteroid-Snippet/blob/master/Snippets.md>
 ## Source Code
 
 <https://github.com/Imtiyaz2007/Asteroid-Snippet>
