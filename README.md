@@ -1,4 +1,4 @@
-# Asteroid Snippets 
+# Asteroid Snippets
 
 A Java snippet extension for beginners.
 
@@ -14,6 +14,7 @@ Visual Studio Code 1.63.0 <br/>
 <br>
 
 # Installation
+
 Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
 <br>
 ``` ext install AsteroidSoftwares.asteroid-snippet ```
@@ -99,7 +100,9 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 75|abstract|abstract class
 
 ## Source Code
-https://github.com/Imtiyaz2007/Asteroid-Snippet
+
+<https://github.com/Imtiyaz2007/Asteroid-Snippet>
 
 ## Extension on marketplace
-https://marketplace.visualstudio.com/items?itemName=AsteroidSoftwares.asteroid-snippet
+
+<https://marketplace.visualstudio.com/items?itemName=AsteroidSoftwares.asteroid-snippet>
