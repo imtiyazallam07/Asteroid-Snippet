@@ -2,14 +2,14 @@
 	"print": {
 		"prefix": "print",
 		"body": [
-			"System.out.print(\"$1\");"
+			"System.out.print($1);"
 		],
 		"description": "prints text with no new line"
 	},
 	"println": {
 		"prefix": "println",
 		"body": [
-			"System.out.println(\"$1\");"
+			"System.out.println($1);"
 		],
 		"description": "prints text with a new line"
 	},
@@ -580,6 +580,43 @@
 			"}"
 		],
 		"description": "abstract class"
-	}
+	},
+	"println method": {
+		"prefix": "sopln",
+		"body": [
+			"System.out.println($1);"
+		],
+		"description": "println method"
+	},
+	"print method": {
+		"prefix": "sop",
+		"body": [
+			"System.out.print($1);"
+		],
+		"description": "Array"
+	},
+	"println method 2": {
+		"prefix": "puts",
+		"body": [
+			"System.out.println($1);"
+		],
+		"description": "println method"
+	},
+	"print method 2": {
+		"prefix": "cout",
+		"body": [
+			"System.out.print($1);"
+		],
+		"description": "print method"
+	},
+	"printf": {
+		"prefix": "printf",
+		"body": [
+			"System.out.printf($1);"
+		],
+		"description": "printf method"
+	},
+
+
 	
 }
