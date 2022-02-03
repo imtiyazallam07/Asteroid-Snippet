@@ -423,70 +423,70 @@
 	"String array": {
 		"prefix": "strarr",
 		"body": [
-			"String[] ${1:arr} = ${1:new String[${2:10}]};"
+			"String[] ${1:arr} = ${2:new String[${3:10}]};"
 		],
 		"description": "String array"
 	},
 	"int array": {
 		"prefix": "intarr",
 		"body": [
-			"int[] ${1:arr} = ${1:new int[${2:10}]};"
+			"int[] ${1:arr} = ${2:new int[${3:10}]};"
 		],
 		"description": "int array"
 	},
 	"short array": {
 		"prefix": "shortarr",
 		"body": [
-			"short[] ${1:arr} = ${1:new short[${2:10}]};"
+			"short[] ${1:arr} = ${2:new short[${3:10}]};"
 		],
 		"description": "short array"
 	},
 	"byte array": {
 		"prefix": "bytearray",
 		"body": [
-			"byte[] ${1:arr} = ${1:new byte[${2:10}]};"
+			"byte[] ${1:arr} = ${2:new byte[${3:10}]};"
 		],
 		"description": "byte array"
 	},
 	"long array": {
 		"prefix": "longarr",
 		"body": [
-			"long[] ${1:arr} = ${1:new long[${2:10}]};"
+			"long[] ${1:arr} = ${2:new long[${3:10}]};"
 		],
 		"description": "long array"
 	},
 	"double array": {
 		"prefix": "doublearr",
 		"body": [
-			"double[] ${1:arr} = ${1:new double[${2:10}]};"
+			"double[] ${1:arr} = ${2:new double[${3:10}]};"
 		],
 		"description": "double array"
 	},
 	"float array": {
 		"prefix": "floatarr",
 		"body": [
-			"float[] ${1:arr} = ${1:new float[${2:10}]};"
+			"float[] ${1:arr} = ${2:new float[${3:10}]};"
 		],
 		"description": "float array"
 	},
 	"char array": {
 		"prefix": "chararr",
 		"body": [
-			"char[] ${1:arr} = ${1:new char[${2:10}]};"
+			"char[] ${1:arr} = ${2:new char[${3:10}]};"
 		],
 		"description": "char array"
 	},
 	"boolean array": {
 		"prefix": "boolarr",
 		"body": [
-			"boolean[] ${1:arr} = ${1:new boolean[${2:10}]};"
+			"boolean[] ${1:arr} = ${2:new boolean[${3:10}]};"
 		],
 		"description": "boolean array"
 	},
 	"Object array": {
 		"prefix": "objarr",
 		"body": [
-			"Object[] ${1:arr} = ${1:new Object[${2:10}]};"
+			"Object[] ${1:arr} = ${2:new Object[${3:10}]};"
 		],
 		"description": "Object array"
 	},
@@ -616,7 +616,74 @@
 		],
 		"description": "printf method"
 	},
-
-
-	
+	"bubble sort": {
+		"prefix": "bubblesort",
+		"body": [
+			"for (int i = 0; i < ${1:arr}.length - 1; i++) {", 
+			"    for (int j = 0; j < ${1:arr}.length - i - 1; j++) {",
+			"        if (${1:arr}[j] > ${1:arr}[j + 1]) {",
+			"            int ${2:tmp} = ${1:arr}[j];",
+			"            ${1:arr}[j] = ${1:arr}[j + 1];",
+			"            ${1:arr}[j + 1] = ${2:tmp};",
+			"        }",
+			"    }",
+			"}"
+		],
+		"description": "Bubble sort algorithm (Sorts in ascending order; change > to < in the if statement to sort in decending order.)"
+	},
+	"print array": {
+		"prefix": "printarr",
+		"body": [
+			"for (int i = 0; i < ${1:arr}.length; i++) {",
+			"    System.out.println(${1:arr}[i]);",
+			"}"
+		],
+		"description": "print a given array"
+	},
+	"selection sort": {
+		"prefix": "selectionsort",
+		"body": [
+			"for (int i = 0; i < ${1:arr}.length - 1; i++) {",
+			"    int ${2:minIndex} = i;", 
+			"    for (int j = i + 1; j < ${1:arr}.length; j++) {",
+			"        if (${1:arr}[j] < ${1:arr}[${2:minIndex}]) ",
+			"            ${2:minIndex} = j;",
+			"    }",
+			"    int ${3:tmp} = ${1:arr}[i];",
+			"    ${1:arr}[i] = ${1:arr}[${2:minIndex}];",
+			"    ${1:arr}[${2:minIndex}] = ${3:tmp};",
+			"}"
+		],
+		"description": "Selection sort algorithm (Sorts in ascending order; change < to > in the if statement to sort in decending order.)"
+	},
+	"linear search": {
+		"prefix": "linearsearch",
+		"body": [
+			"int ${1:index} = -1;",
+			"for (int i = 0; i < ${2:arr}.length; i++) {",
+			"    if(${2:arr}[i] == ${3:toSearch}) {",
+			"        ${1:index} = i;",
+			"        break;",
+			"    }",
+			"}"
+		],
+		"description": "Linear sort algorithm. First element index is stored in the variable declared just above the loop."
+	},
+	"binary search": {
+		"prefix": "binarysearch",
+		"body": [
+			"int index = -1, start = 0, end = ${1:arr}.length, mid;",
+			"while (start <= end) {",
+			"    mid = (start + end) / 2;",
+			"    if(${2:toSearch} == ${1:arr}[mid]) {",
+			"       index = mid;",
+			"       break;",
+			"    } else if (${2:toSearch} < ${1:arr}[mid])",
+			"       end = mid - 1;",
+			"    else",
+			"        start = mid + 1;",
+			"}"
+		],
+		"description": "Binary search algorithm. First element index is stored in the 'index' variable declared just above the loop."
+	},
 }

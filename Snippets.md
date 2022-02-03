@@ -82,3 +82,7 @@
 78|puts|System.out.println()
 79|cout|System.out.print()
 80|printf|System.out.printf()
+81|bubblesort|Bubble sort algorithm<br>(Sorts in ascending order; change > to < in the if statement to sort in decending order.)
+83|selectionsort|Selection sort algorithm<br>(Sorts in ascending order; change < to > in the if statement to sort in decending order.)
+84|linearsearch|Linear sort algorithm<br>First element index is stored in the variable declared just above the loop.
+85|binarysearch|Binary search algorithm<br>First element index is stored in the 'index' variable declared just above the loop.
