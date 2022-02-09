@@ -14,7 +14,7 @@
 		"description": "prints text with a new line"
 	},
 	"Scanner Object": {
-		"prefix": "scanner",
+		"prefix": "newscanner",
 		"body": [
 			"Scanner ${1:sc} = new Scanner(${2:System.in});"
 		],
@@ -206,17 +206,17 @@
 		"body": [
 			"InputStreamReader ${1:in} = new InputStreamReader(${2:System.in});"
 		],
-		"description": "Generates a BufferedReader object"
+		"description": "Generates a InputStreamReader object"
 	},
 	"BufferedReader": {
-		"prefix": "bufferedreader",
+		"prefix": "newbufferedreader",
 		"body": [
 			"BufferedReader ${1:bf} = new BufferedReader(${2:new InputStreamReader(System.in)});"
 		],
-		"description": "Generates a BufferedReader object"
+		"description": "BufferedReader object"
 	},
 	"object": {
-		"prefix": "obj",
+		"prefix": "newobj",
 		"body": [
 			"${1:$TM_FILENAME_BASE} ${2:obj} = new ${1:$TM_FILENAME_BASE}($3);"
 		],
@@ -593,7 +593,7 @@
 		"body": [
 			"System.out.print($1);"
 		],
-		"description": "Array"
+		"description": "print method"
 	},
 	"println method 2": {
 		"prefix": "puts",
@@ -686,4 +686,176 @@
 		],
 		"description": "Binary search algorithm. First element index is stored in the 'index' variable declared just above the loop."
 	},
+	"arraylist obj": {
+		"prefix": "newarraylist",
+		"body": [
+			"ArrayList<${1:Object}> ${2:arrList} = new ArrayList<${1:Object}>();"
+		],
+		"description": "ArrayList object"
+	},
+	"list obj": {
+		"prefix": "newlist",
+		"body": [
+			"List<${1:Object}> ${2:arrList} = new List<${1:Object}>();"
+		],
+		"description": "List object"
+	},
+	"hashmap obj": {
+		"prefix": "newhashmap",
+		"body": [
+			"HashMap<${1:Object}, ${2:Object}> {3:hashmap} = new HashMap<${1:Object}, ${2:Object}>();"
+		],
+		"description": "HashMap object"
+	},
+	"child class": {
+		"prefix": "childcls",
+		"body": [
+			"public class $TM_FILENAME_BASE extends ${1:Object}{",
+			"    ",
+			"}"
+		],
+		"description": "child class"
+	},
+	"child class with main": {
+		"prefix": "childclsmain",
+		"body": [
+			"public class $TM_FILENAME_BASE extends ${1:Object}{",
+			"    public static void main (String[] args) {",
+			"        ",
+			"    }",
+			"}"
+		],
+		"description": "child class with a main method"
+	},
+	"file obj": {
+		"prefix": "newfile",
+		"body": [
+			"File ${1:file} = new File(${2:fileAddress});"
+		],
+		"description": "HashMap object"
+	},
+	"fileinputstream obj": {
+		"prefix": "newfileinputstream",
+		"body": [
+			"FileInputStream ${1:file} = new FileInputStream(${2:fileAddress});"
+		],
+		"description": "FileInputStream object"
+	},
+	"filereader obj": {
+		"prefix": "newfilereader",
+		"body": [
+			"FileReader ${1:file} = new FileReader(${2:fileAddress});"
+		],
+		"description": "FileReader object"
+	},
+	"filewriter obj": {
+		"prefix": "newfilewriter",
+		"body": [
+			"FileWriter ${1:file} = new FileWriter(${2:fileAddress});"
+		],
+		"description": "FileWriter object"
+	},
+	"fileoutputstream obj": {
+		"prefix": "newfileoutputstream",
+		"body": [
+			"FileOutputStream ${1:file} = new FileOutputStream(${2:fileAddress});"
+		],
+		"description": "FileOutputStream object"
+	},
+	"const": {
+		"prefix": "const",
+		"body": [
+			"final"
+		],
+		"description": "final keyword (Can be useful for those who just shifted from C++ to Java)"
+	},
+	"package class": {
+		"prefix": "packagecls",
+		"body": [
+			"package ${1:packageName};",
+			"",
+			"public class $TM_FILENAME_BASE {",
+			"    ",
+			"}"
+		],
+		"description": "Generates a class with package declaration"
+	},
+	"package abstractclass": {
+		"prefix": "packageabstractcls",
+		"body": [
+			"package ${1:packageName};",
+			"",
+			"public abstract class $TM_FILENAME_BASE {",
+			"    ",
+			"}"
+		],
+		"description": "Generates an abstract class with package declaration"
+	},
+	"package enum": {
+		"prefix": "packageenum",
+		"body": [
+			"package ${1:packageName};",
+			"",
+			"public enum $TM_FILENAME_BASE {",
+			"    ",
+			"}"
+		],
+		"description": "Generates an enum with package declaration"
+	},
+	"interface": {
+		"prefix": "interface",
+		"body": [
+			"public interface $TM_FILENAME_BASE {",
+			"    ",
+			"}"
+		],
+		"description": "Generates an interface"
+	},
+	"packageinterface": {
+		"prefix": "packageinterface",
+		"body": [
+			"package ${1:packageName};",
+			"",
+			"public interface $TM_FILENAME_BASE {",
+			"    ",
+			"}"
+		],
+		"description": "Generates an interface with a package declaration"
+	},
+	"record": {
+		"prefix": "record",
+		"body": [
+			"public record $TM_FILENAME_BASE {",
+			"    ",
+			"}"
+		],
+		"description": "Generates a record"
+	},
+	"package record": {
+		"prefix": "packagerecord",
+		"body": [
+			"package ${1:packageName};",
+			"",
+			"public record $TM_FILENAME_BASE {",
+			"    ",
+			"}"
+		],
+		"description": "Generates a record with a package declaration"
+	},
+	"exit": {
+		"prefix": "exit",
+		"body": [
+			"System.exit(${1:0});"
+		],
+		"description": "System.exit(exitCode)"
+	},
+
+	"current time": {
+		"prefix": "time",
+		"body": [
+			"System.currentTimeMillis();"
+		],
+		"description": "System.currentTimeMillis()"
+	},
+	
 }

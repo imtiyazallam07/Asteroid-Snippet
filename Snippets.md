@@ -4,7 +4,7 @@
 :-----:|:-----:|:-----:
 1|println|System.out.println("");
 2|print|System.out.print("");
-3|Scanner|Scanner sc = new Scanner(System.in);
+3|newscanner|Scanner sc = new Scanner(System.in);
 4|is|is equal to operator (==)
 5|abs|Math.abs(${1:number})
 6|pow|Math.pow(${1:number}, ${2:power})
@@ -30,8 +30,8 @@
 26|to\_d|Double.parseDouble($1)
 27|clsmain|Generates a class with name same as the file name and a main method
 28|cls|Generates a class with name same as the file name
-29|inputstreamreader|Generates an object of InputStreamReader Class
-30|bufferedreader|Generates an object of BufferedReader Class
+29|newinputstreamreader|Generates an object of InputStreamReader Class
+30|newbufferedreader|Generates an object of BufferedReader Class
 31|obj|Object
 32|ternary|ternary operator
 33|or|\|\|
@@ -86,3 +86,23 @@
 83|selectionsort|Selection sort algorithm<br>(Sorts in ascending order; change < to > in the if statement to sort in decending order.)
 84|linearsearch|Linear sort algorithm<br>First element index is stored in the variable declared just above the loop.
 85|binarysearch|Binary search algorithm<br>First element index is stored in the 'index' variable declared just above the loop.
+86|newarraylist|ArrayList Object
+87|newlist|List Object
+88|newhashmap|HashMap object
+89|childcls|Child class (By defauld the class extends to java.lang.Object)
+90|childclsmain|Child class (By defauld the class extends to java.lang.Object)
+91|newfile|File class Object
+92|newfileinputstream|FileInputStream object
+93|newfileoutputstream|FileOutputStream Object
+94|newfilereader|FileReader Object
+95|newfilewriter|FileWriter Object
+96|const|final keyword<br>(Can be useful for those who just shifted from C++ to Java)
+97|packagecls|Generates a class with package declaration
+98|packageabstractcls|Generates an abstract class with package declaration
+99|packageenum|Generates an enum with package declaration declaration
+100|interface|Generates a interface
+101|packageinterface|Generates a interface with package declaration
+102|record|Generates a record
+103|packagerecord|Generates a record with a package declaration
+104|exit|System.exit(exitCode);
+105|time|System.currentTimeMillis();
